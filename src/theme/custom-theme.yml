@@ -1,0 +1,80 @@
+font:
+  catalog:
+    MSYH:
+      normal: msyh.ttf
+      italic: msyh.ttf
+      bold: msyhbd.ttf
+      bold_italic: msyhbd.ttf
+title_page:
+  align: left
+  background_image: cover.png
+
+page:
+  layout: portrait
+  margin: [0.75in, 1in, 0.75in, 1in]
+  size: A4
+base:
+  font_family: MSYH
+  font_color: #333333
+  line_height_length: 17
+  line_height: $base_line_height_length / $base_font_size
+vertical_rhythm: $base_line_height_length
+heading:
+  font_family: MSYH
+  font_color: #FF8000
+  font_size: 17
+  font_style: bold
+  line_height: 1.2
+  margin_bottom: $vertical_rhythm
+link:
+  font_family: MSYH
+  font_color: #009900
+outline_list:
+  font_family: MSYH
+#  indent: $base_font_size * 1.5
+#header:
+#  height: 0.75in
+#  line_height: 1
+#  recto_content:
+#    center: '{document-title}'
+#  verso_content:
+#    center: '{document-title}'
+#footer:
+#  height: 0.75in
+#  line_height: 1
+#  recto_content:
+#    right: '{chapter-title} | *{page-number}*'
+#  verso_content:
+#    left: '*{page-number}* | {chapter-title}'
+image:
+  font_family: MSYH
+  align: center
+caption:
+  font_family: MSYH
+  align: center
+  font_color: #FF0000
+  font_size: 10
+
+table:
+#  border_width: 0.8
+  font_family: MSYH
+#  grid_width: $table_background_color * 0.25
+
+admonition:
+  font_family: MSYH
+example:
+  font_family: MSYH
+quote:
+  font_family: MSYH
+verse:
+  font_family: MSYH
+sidebar:
+  font_family: MSYH
+listing:
+  font_family: MSYH
+literal:
+  font_family: MSYH
+table:
+  font_family: MSYH
+code:
+  font_family: MSYH
