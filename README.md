@@ -22,12 +22,12 @@
 
 #参考链接:
 > * [swagger2markupmaven插件官方文档](http://swagger2markup.github.io/swagger2markup/1.0.1/)
-  * [asciidoctor maven插件官方文档](http://asciidoctor.org/docs/asciidoctor-maven-plugin/)
-  * [pom中配置的asciidoctor属性说明](http://asciidoctor.org/docs/asciidoctor-maven-plugin/#configuration-options)
-  * [asciidoctor maven插件中文说明](https://github.com/asciidoctor/asciidoctor-maven-plugin/blob/master/README_zh-CN.adoc)
-  * [asciidoctor maven插件使用范例](https://github.com/asciidoctor/asciidoctor-maven-examples)
-  * [pdf文件样式设置指引](https://github.com/asciidoctor/asciidoctor-pdf/blob/master/docs/theming-guide.adoc)
-  * [pdf文件自定义字体设置参考](https://github.com/asciidoctor/asciidoctor-pdf/blob/master/docs/theming-guide.adoc#custom-fonts)
+> * [asciidoctor maven插件官方文档](http://asciidoctor.org/docs/asciidoctor-maven-plugin/)
+> * [pom中配置的asciidoctor属性说明](http://asciidoctor.org/docs/asciidoctor-maven-plugin/#configuration-options)
+> * [asciidoctor maven插件中文说明](https://github.com/asciidoctor/asciidoctor-maven-plugin/blob/master/README_zh-CN.adoc)
+> * [asciidoctor maven插件使用范例](https://github.com/asciidoctor/asciidoctor-maven-examples)
+> * [pdf文件样式设置指引](https://github.com/asciidoctor/asciidoctor-pdf/blob/master/docs/theming-guide.adoc)
+> * [pdf文件自定义字体设置参考](https://github.com/asciidoctor/asciidoctor-pdf/blob/master/docs/theming-guide.adoc#custom-fonts)
 
 #其他
 如果觉得不错,请加个星,不甚感激!!!
