@@ -5,10 +5,10 @@
    2. asciidoctor-maven-plugin
 
 #如何使用
-> 将swagger.yaml或swagger.json文件放入src/test/resources包,若是swagger.json格式的话需要修改pom.xml中定义的<swagger.input>属性。
-> 因为用到的两个插件不会自动执行,所以指定了插件执行所在的阶段为test,故运行一下命令即可。
-> `mvn test`
-> 执行完毕后,将在target/asciidoc下看到生成的文档。
+1. 将swagger.yaml或swagger.json文件放入src/test/resources包.若是swagger.json格式的话需要修改pom.xml中定义的<swagger.input>属性。
+2. `mvn test`
+
+因为用到的两个插件不会自动执行,所以指定了插件执行所在的阶段为test,故maven插件目标包含test环节的命令都可以执行。执行完毕后,将在target/asciidoc下会看到生成的文档。
 
 #注意事项
 1. 若你设计的API中没有用TAG分类,则必须将pom中的<swagger2markup.pathsGroupedBy>TAGS</swagger2markup.pathsGroupedBy> 改为AS-IS或者直接注释掉
