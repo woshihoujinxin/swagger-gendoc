@@ -3,8 +3,6 @@
   主要用到了两个maven插件:
    1. swagger2markup-maven-plugin
    2. asciidoctor-maven-plugin
-> 基本的配置已经完成,不需要太大的改动。
-> pdf主题配置过于耗时,这里只是简单设置了下,如果对样式不满意,可以自行参考官方文档配置pdf的样式
 
 #如何使用
 > 将swagger.yaml或swagger.json文件放入src/test/resources包,若是swagger.json格式的话需要修改pom.xml中定义的<swagger.input>属性。
@@ -14,6 +12,8 @@
 
 #注意事项
 1. 若你设计的API中没有用TAG分类,则必须将pom中的<swagger2markup.pathsGroupedBy>TAGS</swagger2markup.pathsGroupedBy> 改为AS-IS或者直接注释掉
+2. pdf主题配置过于耗时,这里只是简单设置了下,如果对样式不满意,可以自行参考官方文档配置pdf的样式
+3. 若要修改pdf文件字体可将fonts下的字体文件换成你的字体,并在custom-theme.yml中修改font -> catalog的配置,具体请参考[pdf文件样式设置指引](https://github.com/asciidoctor/asciidoctor-pdf/blob/master/docs/theming-guide.adoc)                                                  
 
 #联系方式
 > * QQ: 574311651
