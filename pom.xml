@@ -18,11 +18,11 @@
         <maven.compiler.plugin>3.3</maven.compiler.plugin>
         <maven.jar.plugin>2.4</maven.jar.plugin>
         <maven.resources.plugin>2.7</maven.resources.plugin>
-        <asciidoctor.maven.plugin>1.5.3</asciidoctor.maven.plugin>
-        <asciidoctorj.pdf.version>1.5.0-alpha.11</asciidoctorj.pdf.version>
+        <asciidoctor.maven.plugin>1.5.6</asciidoctor.maven.plugin>
+        <asciidoctorj.pdf.version>1.5.0-alpha.16</asciidoctorj.pdf.version>
         <asciidoctorj.epub3.version>1.5.0-alpha.6</asciidoctorj.epub3.version>
 
-        <swagger.input>${swagger.output.dir}/swagger.json</swagger.input>
+        <swagger.input>${swagger.output.dir}/swagger.yaml</swagger.input>
         <swagger.output.dir>${project.build.directory}/classes</swagger.output.dir>
         <swagger.snippetOutput.dir>${project.build.directory}/asciidoc/snippets</swagger.snippetOutput.dir>
 
@@ -37,6 +37,11 @@
 
 
     <pluginRepositories>
+	    <pluginRepository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </pluginRepository>
         <pluginRepository>
             <id>jcenter-snapshots</id>
             <name>jcenter</name>
@@ -54,6 +59,11 @@
 
     <repositories>
         <repository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+		<repository>
             <id>jcentral</id>
             <name>bintray</name>
             <url>http://jcenter.bintray.com</url>
@@ -120,8 +130,8 @@
                     <outputDir>${generated.asciidoc.directory}</outputDir>
                     <config>
                         <swagger2markup.markupLanguage>ASCIIDOC</swagger2markup.markupLanguage>
-                        <!--如果API中没有TAG则改写为AS-IS或不写这行-->
-                        <swagger2markup.pathsGroupedBy>TAGS</swagger2markup.pathsGroupedBy>
+                        <!--如果API中没有TAG则改写为AS-IS或不写这行
+                        <swagger2markup.pathsGroupedBy>AS-IS</swagger2markup.pathsGroupedBy>-->
                         <swagger2markup.extensions.dynamicOverview.contentPath>${project.basedir}/src/docs/asciidoc/extensions/overview</swagger2markup.extensions.dynamicOverview.contentPath>
                         <swagger2markup.extensions.dynamicDefinitions.contentPath>${project.basedir}/src/docs/asciidoc/extensions/definitions</swagger2markup.extensions.dynamicDefinitions.contentPath>
                         <swagger2markup.extensions.dynamicPaths.contentPath>${project.basedir}/src/docs/asciidoc/extensions/paths</swagger2markup.extensions.dynamicPaths.contentPath>
